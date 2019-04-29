@@ -123,14 +123,38 @@ footer .copyright {
     display: flex;
     justify-content: center;
 }
-@media screen and (max-width: 800px) {
-    body {
-      background-color: olive;
+@media (max-width: 800px) {
+    .wrapper {
+        width: 90%;
     }
-  }
+    .motto figure {
+        display: none;
+    }
+    .motto {
+        justify-content: center;
+    }
+    /* nav ul {
+        flex-direction: column-reverse;
+    } */
+    nav ul {
+        flex-flow: row wrap;
+    }
+  
+    li:last-child {
+        order: -1;
+        width: 100%;
+        
+    }
 
-  @media screen and (max-width: 500px) {
-    body {
-      background-color: olive;
+    /* li:not(:last-child) {
+        background-color: red;
+    } */
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
     }
-  }
+
+@media (max-width: 500px) {
+    
+}
